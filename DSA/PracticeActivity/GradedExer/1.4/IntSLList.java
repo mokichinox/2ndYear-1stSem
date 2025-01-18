@@ -1,4 +1,3 @@
-package SinglyLinkedList;
 
 public class IntSLList {
     protected IntSLLNode head, tail;
