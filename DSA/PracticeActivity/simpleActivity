@@ -1,0 +1,16 @@
+public class Main{
+    public static void main(String[] args){
+        
+        Class myClass = new Class();
+        myClass.print();
+        
+    }
+}
+
+public class Class{
+    
+    public void print(){
+        System.out.print("VPL Practice Test");
+    }
+    
+}
