@@ -1,0 +1,30 @@
+import java.util.Random;
+
+public class Main {
+    public static void main(String[] args) {
+    
+    int szn = 100;
+    int[] numbers = new int[szn];
+    
+    Random randomNum = new Random();
+    
+    int sum = 0;
+    for (int i = 0; i < szn; i++) {
+      numbers[i] = randomNum.nextInt(100);
+      sum += numbers[i];
+    }
+
+    double average = (double) sum / numbers.length;
+    int count = 0;
+    
+    for (int number : numbers) {
+      if (number < average) {
+        count++;
+      }
+    }
+
+    System.out.println("Average: " + average);
+    System.out.println("Count of numbers less than average: " + count);
+  
+  }
+}
