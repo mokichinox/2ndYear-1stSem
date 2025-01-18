@@ -1,5 +1,3 @@
-package Main;
-
 public class Student {
     private String lName, fName, course;
     private int[] grades;
