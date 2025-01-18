@@ -1,0 +1,31 @@
+public class Main {
+    public static int lastLargestIndex(int[] array, int size) {
+        if (size == 0) {
+            throw new IllegalArgumentException("Array is empty!");
+        }
+
+        int index = 0;
+        int max = array[0];
+
+        for (int x = 1; x < size; x++) {
+            if (array[x] > max) {
+                max = array[x];
+                index = x;
+            } 
+            else if (array[x] == max) {
+                index = x;
+            }
+        }
+
+        return index;
+    }
+
+    public static void main(String[] args) {
+  
+        int[] array = {1, 2, 3, 4, 5, 5, 3, 2, 1};
+        int size = array.length;
+
+        int index = lastLargestIndex(array, size);
+        System.out.println("Index of the last occurrence of the largest element is " + index);
+    }
+}
