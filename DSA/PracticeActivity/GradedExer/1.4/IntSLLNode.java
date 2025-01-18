@@ -1,5 +1,3 @@
-package SinglyLinkedList;
-
 public class IntSLLNode {
     public int info;
     public IntSLLNode next;
